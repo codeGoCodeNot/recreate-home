@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles */
+.fabars {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+}
+
+/* Responsive image sizing */
+
+/* Small tablets */
+@media (max-width: 1200px) {
+  .marci-img {
+    width: 350px;
+    height: 108px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .fabars {
+    left: 200px;
+  }
+  .marci-img {
+    width: 450px;
+    height: 140px;
+  }
+}
+
+/* Super large screens */
+@media (min-width: 1500px) {
+  .fabars {
+    left: 400px;
+  }
+  .marci-img {
+    width: 500px;
+    height: 156px;
+  }
+}
+
+/* Phones */
+@media (max-width: 500px) {
+  .marci-img {
+    width: 250px;
+    height: 78px;
+  }
+}
