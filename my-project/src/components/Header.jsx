@@ -22,7 +22,7 @@ const Header = () => {
         alt="Marci Metzger"
       />
       {menuOpen && (
-        <div className="fixed top-0 left-0 h-full w-[420px] bg-[#f6f6f6] z-1 ">
+        <div className="fixed top-0 left-0 h-full w-[430px] bg-[#f6f6f6] z-1 ">
           <div className="flex justify-between items-start px-8 pt-8">
             <div></div>
             <RxCross2

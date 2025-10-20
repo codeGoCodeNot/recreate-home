@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 /* Base styles */
 .fabars {
   position: absolute;
@@ -36,7 +40,7 @@
 /* Super large screens */
 @media (min-width: 1500px) {
   .fabars {
-    left: 400px;
+    left: 380px;
   }
   .marci-img {
     width: 500px;
