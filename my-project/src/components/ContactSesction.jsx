@@ -5,28 +5,34 @@ const ContactSection = () => (
     <h2 className="text-4xl text-[#9e7c7c] font-[Cinzel] mb-25 text-center">
       CALL OR VISIT
     </h2>
-    <div className="flex flex-col lg:flex-row justify-center items-start gap-16 max-w-[1200px] mx-auto px-4">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-16 max-w-[1200px] mx-auto px-4">
       {/* Left: Form */}
-      <div className="flex-1 w-full max-w-xl mx-auto mb-12 lg:mb-0">
+      <div className="max-w-md w-full mx-auto mb-12 lg:mb-0 text-center lg:text-left flex flex-col items-center lg:items-start">
         <h3 className="text-xl font-semibold mb-8">Send Message</h3>
-        <form className="flex flex-col gap-8">
-          <div>
-            <label className="block mb-2 text-gray-700">Name</label>
+        <form className="flex flex-col gap-8 w-full">
+          <div className="w-full">
+            <label className="block mb-2 text-gray-700 text-left lg:text-left">
+              Name
+            </label>
             <input
               type="text"
               className="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#9e7c7c] bg-transparent"
             />
           </div>
-          <div>
-            <label className="block mb-2 text-gray-700">Email*</label>
+          <div className="w-full">
+            <label className="block mb-2 text-gray-700 text-left lg:text-left">
+              Email*
+            </label>
             <input
               type="email"
               required
               className="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#9e7c7c] bg-transparent"
             />
           </div>
-          <div>
-            <label className="block mb-2 text-gray-700">Message</label>
+          <div className="w-full">
+            <label className="block mb-2 text-gray-700 text-left lg:text-left">
+              Message
+            </label>
             <textarea
               rows={4}
               className="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-[#9e7c7c] bg-transparent"
@@ -39,23 +45,23 @@ const ContactSection = () => (
             SEND
           </button>
         </form>
-        <div className="mt-4 text-xs text-gray-500 text-center">
+        <div className="mt-4 text-xs text-gray-500 text-center w-full">
           This site is protected by reCAPTCHA and the Google Privacy Policy and
           Terms of Service apply.
         </div>
       </div>
       {/* Right: Info */}
-      <div className="flex-1 w-full max-w-xl mx-auto">
+      <div className="max-w-md w-full mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
         <a
-          href="#" // Replace with your WhatsApp link
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-[#455A64] w-100 text-white py-3 px-6 rounded-full font-semibold mb-8 hover:bg-[#263238] transition-all justify-center"
+          className="flex items-center justify-center gap-2 bg-[#455A64] w-full text-white py-3 px-6 rounded-full font-semibold mb-8 hover:bg-[#263238] transition-all"
         >
           <FaWhatsapp size={22} className="inline" />
           Message us on WhatsApp
         </a>
-        <div className="mb-6">
+        <div className="mb-6 w-full">
           <div className="font-semibold text-lg mb-2">
             Marci Metzger - THE RIDGE REALTY GROUP
           </div>
@@ -66,7 +72,7 @@ const ContactSection = () => (
             (206) 919-6886
           </a>
         </div>
-        <div>
+        <div className="w-full">
           <div className="font-semibold text-lg mb-2">Office Hours</div>
           <div className="mb-2">
             Open today{" "}

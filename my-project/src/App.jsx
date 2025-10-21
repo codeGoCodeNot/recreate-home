@@ -5,6 +5,7 @@ import LogoBar from "./components/Logo";
 import PhotoGallery from "./components/PhotoGallery";
 import Services from "./components/Services";
 import ContactSection from "./components/ContactSesction";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <PhotoGallery />
       <Services />
       <ContactSection />
+      <Footer />
     </>
   );
 }
