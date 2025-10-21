@@ -1,4 +1,4 @@
-# Ridge Realty Group – Pahrump Realtor Website
+# Luxury Presence– Pahrump Realtor Website
 
 ## Overview
 
