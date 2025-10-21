@@ -1,3 +1,7 @@
+import service1 from "../assets/service1.png";
+import service2 from "../assets/service2.png";
+import service3 from "../assets/service3.png";
+
 const Services = () => (
   <section className="bg-white py-16 w-full">
     <h2 className="text-4xl text-[#9e7c7c] font-[Cinzel] mb-12 text-center">
@@ -7,7 +11,7 @@ const Services = () => (
       {/* Service 1 */}
       <div className="flex-1 flex flex-col items-center">
         <img
-          src="./src/assets/service1.png"
+          src={service1}
           alt="Real Estate Done Right"
           className="w-[320px] h-[320px] xl:w-[420px] xl:h-[420px] object-cover mb-8"
         />
@@ -24,7 +28,7 @@ const Services = () => (
       {/* Service 2 */}
       <div className="flex-1 flex flex-col items-center">
         <img
-          src="./src/assets/service2.png"
+          src={service2}
           alt="Commercial & Residential"
           className="w-[320px] h-[320px] xl:w-[420px] xl:h-[420px] object-cover mb-8"
         />
@@ -41,7 +45,7 @@ const Services = () => (
       {/* Service 3 */}
       <div className="flex-1 flex flex-col items-center">
         <img
-          src="./src/assets/service3.png"
+          src={service3}
           alt="Rely on Expertise"
           className="w-[320px] h-[320px] xl:w-[420px] xl:h-[420px] object-cover rounded-full mb-8"
         />

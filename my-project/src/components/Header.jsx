@@ -1,6 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
+import marciImg from "../assets/marci.png";
 
 const navItems = ["HOME", "LISTINGS", "LET'S MOVE", "ABOUT US"];
 
@@ -11,14 +12,15 @@ const Header = () => {
     <header className="flex items-center justify-center relative">
       <button onClick={handleClick}>
         <RxHamburgerMenu
-          className="fabars left-50 top-1/2 -translate-y-1/2 absolute cursor-pointer"
+          className="hamburger-btn fabars left-50 top-1/2 -translate-y-1/2 absolute cursor-pointer"
           size={25}
           color="#7d6e6e"
         />
       </button>
+
       <img
         className="marci-img cursor-pointer"
-        src="./src/assets/marci.png"
+        src={marciImg}
         alt="Marci Metzger"
       />
       {menuOpen && (

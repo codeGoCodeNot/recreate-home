@@ -1,6 +1,11 @@
+import homeImg from "../assets/home.jpg";
+
 const Form = () => {
   return (
-    <div className="bg-[url('./src/assets/home.jpg')] bg-cover bg-center bg-no-repeat w-full h-[650px] relative mt-25">
+    <div
+      className="bg-cover bg-center bg-no-repeat w-full h-[650px] relative mt-25"
+      style={{ backgroundImage: `url(${homeImg})` }}
+    >
       <div className="absolute inset-0 bg-black opacity-30"></div>
       <h1 className="w-full text-neutral-50 text-4xl font-[700] font-[Cinzel] absolute top-15 left-1/2 transform -translate-x-1/2 text-center">
         FIND YOUR DREAM HOME

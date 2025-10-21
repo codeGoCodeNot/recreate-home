@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import photo1 from "../assets/photo1.png";
+import photo2 from "../assets/photo2.png";
+import photo3 from "../assets/photo3.png";
+import photo4 from "../assets/photo4.png";
+import photo5 from "../assets/photo5.png";
+import photo6 from "../assets/photo6.png";
 
-const photos = [
-  "./src/assets/photo1.png",
-  "./src/assets/photo2.png",
-  "./src/assets/photo3.png",
-  "./src/assets/photo4.png",
-  "./src/assets/photo5.png",
-  "./src/assets/photo6.png",
-];
+const photos = [photo1, photo2, photo3, photo4, photo5, photo6];
 
 const PhotoGallery = () => {
   const [current, setCurrent] = useState(0);

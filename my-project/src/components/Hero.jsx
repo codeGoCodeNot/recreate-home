@@ -1,7 +1,23 @@
+import profileImg from "../assets/profile.webp";
+import image1 from "../assets/image1.webp";
+import image2 from "../assets/image2.webp";
+import image3 from "../assets/image3.webp";
+import landscape from "../assets/landscape.jpg"; // <-- import bg image
+
 const Hero = () => {
   return (
     <>
-      <section className="bg-[url('./src/assets/landscape.jpg')] bg-cover bg-center bg-no-repeat w-full h-[800px] relative">
+      <section
+        style={{
+          backgroundImage: `url(${landscape})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: "800px",
+          position: "relative",
+        }}
+      >
         <div className="absolute inset-20 flex flex-col items-center justify-end text-white">
           <div className="text-lg tracking-widest mb-4 text-center font-light">
             MARCI METZGER - THE RIDGE REALTY GROUP
@@ -18,10 +34,12 @@ const Hero = () => {
         <h1 className="text-white text-3xl font-[Cinzel]">MARCI METZGER</h1>
         <img
           className="w-[360px] h-[360px] rounded-full"
-          src="./src/assets/profile.webp"
+          src={profileImg}
           alt="MARCI METZGER"
         />
-        <h1 className="text-white text-2xl">REALTOR FOR NEARLY 3 DECADES!</h1>
+        <h1 className="text-white text-2xl text-center">
+          REALTOR FOR NEARLY 3 DECADES!
+        </h1>
         <h1 className="text-white ">206-919-6886</h1>
       </section>
       <section className="w-full h-full flex justify-center flex-col items-center">
@@ -31,7 +49,7 @@ const Hero = () => {
         <div className="container w-full flex justify-center mt-25">
           <ul className="grid-container list-none grid grid-cols-2 grid-rows-3 mb-10 text-lg">
             <li className="one flex justify-center">
-              <img src="./src/assets/image1.webp" />
+              <img src={image1} alt="Top Residential Sales" />
             </li>
             <li className="two flex flex-col items-center justify-center gap-10 line leading-[2]">
               <h1 className="text-xl font-bold">
@@ -53,10 +71,10 @@ const Hero = () => {
               </h3>
             </li>
             <li className="three flex justify-center">
-              <img src="./src/assets/image2.webp" />
+              <img src={image2} alt="Get it SOLD" />
             </li>
             <li className="five flex justify-center">
-              <img src="./src/assets/image3.webp" />
+              <img src={image3} alt="Guide to Buyers" />
             </li>
             <li className="six flex flex-col items-center justify-center gap-10 line leading-[2]">
               <h1 className="text-xl font-bold">Guide to Buyers</h1>

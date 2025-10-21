@@ -106,3 +106,21 @@ body {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 450px) {
+  .marci-img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 80px;
+    height: auto;
+    gap: 1em;
+  }
+
+  .copy-right {
+    font-size: 0.8rem;
+  }
+}

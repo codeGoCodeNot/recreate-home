@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYelp } from "react-icons/fa";
-
+import logoImg from "../assets/logo1.png";
 const Footer = () => (
   <footer className="bg-black pt-0 pb-8 w-full">
     {/* Google Map */}
@@ -49,26 +49,17 @@ const Footer = () => (
           <FaYelp />
         </a>
       </div>
-      <div className="text-white text-md tracking-wide text-center mb-4">
+      <div className="copy-right text-white text-md tracking-wide text-center mb-4">
         COPYRIGHT © 2023 MARCI METZGER HOMES - ALL RIGHTS RESERVED
       </div>
       <div className="mb-2 flex flex-col items-center">
         <span className="text-[#ccc] text-sm mb-2">POWERED BY</span>
         <div className="flex items-center gap-2">
-          <svg width="28" height="28" viewBox="0 0 30 30" fill="none">
-            <circle cx="15" cy="15" r="13" stroke="#00C9A7" strokeWidth="3" />
-            <text
-              x="15"
-              y="21"
-              textAnchor="middle"
-              fill="#00C9A7"
-              fontSize="14"
-              fontFamily="monospace"
-              fontWeight="bold"
-            >
-              CGCN
-            </text>
-          </svg>
+          <img
+            src={logoImg}
+            alt="CodeGoCodeNot Logo"
+            className="w-8 h-8 object-contain"
+          />
           <span className="text-[#00C9A7] font-bold text-lg tracking-wide">
             CodeGoCodeNot
           </span>
