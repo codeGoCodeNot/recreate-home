@@ -22,7 +22,7 @@ const Header = () => {
         alt="Marci Metzger"
       />
       {menuOpen && (
-        <div className="fixed top-0 left-0 h-full w-[430px] bg-[#f6f6f6] z-1 ">
+        <div className="fixed top-0 left-0 h-full w-[430px] bg-[#f6f6f6] z-50 ">
           <div className="flex justify-between items-start px-8 pt-8">
             <div></div>
             <RxCross2
@@ -35,8 +35,8 @@ const Header = () => {
             {navItems.map((item) => (
               <span
                 key={item}
-                className={`text-[#7d6e6e]  text-sm cursor-pointer ${
-                  item === "HOME" ? "font-[550]" : "font-normal"
+                className={`text-[#7d6e6e]  text-md cursor-pointer ${
+                  item === "HOME" ? "font-[650]" : "font-normal"
                 }`}
               >
                 {item}
